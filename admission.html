@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Admission | Spectrum Crafts</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+}
+
+header{
+background:#111;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+header h2{
+color:#D4AF37;
+}
+
+.container{
+max-width:700px;
+margin:25px auto;
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+label{
+font-weight:bold;
+display:block;
+margin-top:15px;
+}
+
+input,
+select,
+textarea{
+
+width:100%;
+padding:12px;
+margin-top:8px;
+border:1px solid #ccc;
+border-radius:8px;
+
+}
+
+button{
+
+width:100%;
+padding:15px;
+margin-top:25px;
+background:#0B7A5C;
+color:white;
+border:none;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:#111;
+
+}
+
+.required{
+
+color:red;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h2>Spectrum Crafts</h2>
+
+<p>Online Student Admission</p>
+
+</header>
+
+<div class="container">
+
+<form>
+
+<label>
+
+Full Name <span class="required">*</span>
+
+</label>
+
+<input type="text" required>
+
+<label>
+
+Mobile Number <span class="required">*</span>
+
+</label>
+
+<input type="tel" required>
+
+<label>
+
+WhatsApp Number <span class="required">*</span>
+
+</label>
+
+<input type="tel" required>
+
+<label>
+
+Email Address (Optional)
+
+</label>
+
+<input type="email">
+
+<label>
+
+Select Course <span class="required">*</span>
+
+</label>
+
+<select required>
+
+<option value="">Select Course</option>
+
+<option>Mehendi</option>
+
+<option>Embroidery</option>
+
+<option>Crafts</option>
+
+<option>Creative Combo Course</option>
+
+</select>
+
+<label>
+
+Full Address <span class="required">*</span>
+
+</label>
+
+<textarea rows="4" required></textarea>
+
+<button type="submit">
+
+Submit Admission
+
+</button>
+
+</form>
+
+</div>
+
+</body>
+
+</html>
