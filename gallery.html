@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gallery | Spectrum Crafts</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+}
+
+header{
+background:#111;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+header h2{
+color:#D4AF37;
+}
+
+.container{
+width:95%;
+max-width:1200px;
+margin:25px auto;
+}
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+}
+
+.item{
+
+background:white;
+
+padding:15px;
+
+border-radius:10px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+text-align:center;
+
+}
+
+.item img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:8px;
+
+background:#ddd;
+
+}
+
+.item h3{
+
+margin-top:15px;
+
+color:#0B7A5C;
+
+}
+
+.upload{
+
+margin:25px 0;
+
+background:white;
+
+padding:20px;
+
+border-radius:10px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.upload input{
+
+width:100%;
+
+padding:12px;
+
+margin-top:10px;
+
+}
+
+.upload button{
+
+margin-top:15px;
+
+width:100%;
+
+padding:15px;
+
+background:#0B7A5C;
+
+color:white;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h2>Spectrum Crafts</h2>
+
+<p>Gallery Management</p>
+
+</header>
+
+<div class="container">
+
+<div class="upload">
+
+<h3>Upload New Photo</h3>
+
+<input type="file">
+
+<input
+type="text"
+placeholder="Photo Title">
+
+<button>
+
+Upload Photo
+
+</button>
+
+</div>
+
+<div class="gallery">
+
+<div class="item">
+
+<img src="images/gallery1.jpg">
+
+<h3>Mehendi Works</h3>
+
+</div>
+
+<div class="item">
+
+<img src="images/gallery2.jpg">
+
+<h3>Embroidery</h3>
+
+</div>
+
+<div class="item">
+
+<img src="images/gallery3.jpg">
+
+<h3>Crafts</h3>
+
+</div>
+
+<div class="item">
+
+<img src="images/gallery4.jpg">
+
+<h3>Creative Combo Course</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
