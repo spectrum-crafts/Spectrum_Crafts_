@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spectrum Crafts</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f7f7f7;
+color:#222;
+}
+
+header{
+background:#111;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#D4AF37;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:20px;
+font-size:15px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#D4AF37;
+}
+
+.hero{
+
+height:90vh;
+
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("images/hero.jpg") center/cover;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+color:white;
+
+padding:20px;
+
+}
+
+.hero h1{
+
+font-size:55px;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+margin-bottom:30px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+background:#D4AF37;
+
+padding:14px 35px;
+
+border-radius:30px;
+
+text-decoration:none;
+
+color:#111;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#0B7A5C;
+
+color:white;
+
+}
+
+section{
+
+padding:80px 8%;
+
+}
+
+.title{
+
+text-align:center;
+
+font-size:35px;
+
+margin-bottom:15px;
+
+color:#111;
+
+}
+
+.subtitle{
+
+text-align:center;
+
+color:#666;
+
+margin-bottom:40px;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+gap:25px;
+
+}
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:15px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+text-align:center;
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card h3{
+
+color:#0B7A5C;
+
+margin-bottom:10px;
+
+}
+
+.admission{
+
+background:white;
+
+padding:30px;
+
+border-radius:15px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+.admission input,
+.admission textarea,
+.admission select{
+
+width:100%;
+
+padding:14px;
+
+margin-top:8px;
+
+margin-bottom:18px;
+
+border:1px solid #ddd;
+
+border-radius:8px;
+
+}
+
+.admission button{
+
+background:#0B7A5C;
+
+color:white;
+
+border:none;
+
+padding:15px;
+
+width:100%;
+
+border-radius:8px;
+
+font-size:17px;
+
+cursor:pointer;
+
+}
+
+footer{
+
+background:#111;
+
+color:white;
+
+text-align:center;
+
+padding:40px;
+
+margin-top:50px;
+
+}
+
+.whatsapp{
+
+position:fixed;
+
+right:20px;
+
+bottom:20px;
+
+background:#25D366;
+
+color:white;
+
+padding:15px 20px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+@media(max-width:768px){
+
+header{
+
+flex-direction:column;
+
+}
+
+nav{
+
+margin-top:15px;
+
+}
+
+.hero h1{
+
+font-size:36px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+Spectrum Crafts
+
+</div>
+
+<nav>
+
+<a href="#about">About</a>
+
+<a href="#courses">Courses</a>
+
+<a href="#admission">Admission</a>
+
+<a href="#products">Products</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#contact">Contact</a>
+
+<a href="login.html">Login</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Crafting Skills.<br>Creating Futures.</h1>
+
+<p>
+
+Professional Creative Academy & Handmade Gifts
+
+</p>
+
+<a href="#admission" class="btn">
+
+Join Now
+
+</a>
+
+</div>
+
+</section>
+<section id="about">
+
+<h2 class="title">About Spectrum Crafts</h2>
+
+<p class="subtitle">
+
+Spectrum Crafts is a creative academy dedicated to teaching practical skills in Mehendi, Embroidery, Handmade Crafts and our Creative Combo Course. We also create customized handmade gifts with quality and creativity.
+
+</p>
+
+</section>
+
+<section id="courses">
+
+<h2 class="title">Our Courses</h2>
+
+<p class="subtitle">
+
+Choose your favourite creative course.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Mehendi</h3>
+
+<p>Professional Mehendi Designing Course.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Embroidery</h3>
+
+<p>Creative embroidery classes for beginners and professionals.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Crafts</h3>
+
+<p>Learn beautiful handmade craft making.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Creative Combo Course</h3>
+
+<p>Mehendi + Embroidery + Crafts in one complete package.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="admission">
+
+<h2 class="title">Online Student Admission</h2>
+
+<p class="subtitle">
+
+Fill the form below to apply online.
+
+</p>
+
+<div class="admission">
+
+<form>
+
+<label>Full Name *</label>
+
+<input type="text" required>
+
+<label>Mobile Number *</label>
+
+<input type="tel" required>
+
+<label>WhatsApp Number *</label>
+
+<input type="tel" required>
+
+<label>Email Address (Optional)</label>
+
+<input type="email">
+
+<label>Select Course *</label>
+
+<select required>
+
+<option value="">Select Course</option>
+
+<option>Mehendi</option>
+
+<option>Embroidery</option>
+
+<option>Crafts</option>
+
+<option>Creative Combo Course</option>
+
+</select>
+
+<label>Full Address *</label>
+
+<textarea rows="4" required></textarea>
+
+<button type="submit">
+
+Submit Admission
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+<section id="products">
+
+<h2 class="title">Our Products</h2>
+
+<p class="subtitle">
+Beautiful handmade gifts crafted with love.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>Gift Hampers</h3>
+<p>Customized gift hampers for every occasion.</p>
+</div>
+
+<div class="card">
+<h3>Flower Bouquets</h3>
+<p>Elegant handmade flower bouquets.</p>
+</div>
+
+<div class="card">
+<h3>Resin Gifts</h3>
+<p>Premium customized resin creations.</p>
+</div>
+
+<div class="card">
+<h3>Calligraphy Frames</h3>
+<p>Beautiful Arabic calligraphy wall frames.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="title">Gallery</h2>
+
+<p class="subtitle">
+Our latest works and student creations.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>Mehendi Designs</h3>
+</div>
+
+<div class="card">
+<h3>Embroidery Works</h3>
+</div>
+
+<div class="card">
+<h3>Handmade Crafts</h3>
+</div>
+
+<div class="card">
+<h3>Creative Combo Projects</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact Us</h2>
+
+<div class="admission">
+
+<p><strong>📱 Mobile:</strong> +91 97780 38199</p>
+
+<br>
+
+<p><strong>💬 WhatsApp:</strong> +91 97780 38199</p>
+
+<br>
+
+<p><strong>📧 Email:</strong> spectrumpgd@gmail.com</p>
+
+<br>
+
+<p><strong>📍 Location:</strong> Kerala, India</p>
+
+<br>
+
+<p><strong>📷 Instagram:</strong> @spectrumcrafts</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>Spectrum Crafts</h2>
+
+<p>Crafting Skills. Creating Futures.</p>
+
+<br>
+
+<p><strong>Designed by SPECTRUM DESIGN</strong></p>
+
+</footer>
+
+<a
+href="https://wa.me/919778038199"
+class="whatsapp"
+target="_blank">
+
+WhatsApp
+
+</a>
+
+</body>
+
+</html>
